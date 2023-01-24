@@ -28,14 +28,15 @@ const Todo = ({todos, completeTodo, removeTodo, updateTodo}) => {
             {todo.text}
             </div>
             <div className='icons'>
-            <img src="/img/trash-solid.png"
-                onClick={() => removeTodo(todo.id)}
-                className='delete-icon'
-            />
             <img src="/img/edit.png"
                 onClick={() => setEdit({ id: todo.id, value: todo.text })}
                 className='edit-icon'
             />
+            <img src="/img/trash-solid.png"
+                onClick={() => removeTodo(todo.id)}
+                className='delete-icon'
+            />
+            
         </div>
         </div>
     ));
